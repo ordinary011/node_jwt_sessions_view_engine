@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Welcome
+        link(rel='stylesheet' href='css/main.css')
+        style.
+            .bc{
+                color: blue;
+            }
+    body
+        h1(class='bc') Hello
+        h3= title
+        p!= vv
+        ul
+            each pr in arr
+                if pr.price < 200
+                    li less than 200
+                    include partials/ranBT
+                else
+                    li= pr
+                    button 'Cool:_)'
+
+script(src='js/main.js')
